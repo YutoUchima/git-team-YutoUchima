@@ -38,3 +38,23 @@ enpit
     * 0ca3b46 (origin/main, origin/HEAD, main) Initial commit
 
     3つのボランチが共通の初期コミット（0ca3b46）からそれぞれ独立して並行して枝分かれしている状態を表している。
+
+
+# PartB
+
+## Task3
+
+% git log --oneline --graph --all
+
+    dev-benとdev-annaをmainにマージした図。
+
+    *   d73c569 (HEAD -> main) Merge branch 'dev-anna'
+    |\  
+    | * 5670856 (dev-anna) feat: add login feature
+    * | 4d2700c (dev-ben) feat: add dark theme
+    |/  
+    | * 54adfc8 (dev-you) feat: add signup feature
+    |/  
+    * 0ca3b46 (origin/main, origin/HEAD) Initial commit
+
+
