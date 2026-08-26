@@ -58,3 +58,39 @@ enpit
     * 0ca3b46 (origin/main, origin/HEAD) Initial commit
 
 
+# PartC
+
+## Task4
+
+% git merge dev-you 
+
+    mainにマージすると、コンフリクト発生。
+    
+    Auto-merging app.txt
+    CONFLICT (add/add): Merge conflict in app.txt
+    Automatic merge failed; fix conflicts and then commit the result.
+
+% cat app.txt
+
+    <<<<<<< HEAD
+    login feature
+    =======
+    signup feature
+    >>>>>>> dev-you
+
+% git log --oneline --graph --all
+
+    コンフリクトを解消し、コミットした。
+    
+    *   7b4da2c (HEAD -> main) Merge branch 'dev-you' and resolve conflict in app.txt
+    |\  
+    | * 54adfc8 (dev-you) feat: add signup feature
+    * |   d73c569 Merge branch 'dev-anna'
+    |\ \  
+    | * | 5670856 (dev-anna) feat: add login feature
+    | |/  
+    * / 4d2700c (dev-ben) feat: add dark theme
+    |/  
+    * 0ca3b46 (origin/main, origin/HEAD) Initial commit
+
+
