@@ -57,6 +57,22 @@ enpit
     |/  
     * 0ca3b46 (origin/main, origin/HEAD) Initial commit
 
+## Task5
+
+% git log --oneline -n 5
+
+    統合する前のログ。
+    11b362b (HEAD -> dev-anna) wip 3
+    9ee79d6 wip 2
+    302540f wip 1
+    5670856 feat: add login feature
+    0ca3b46 (origin/main, origin/HEAD) Initial commit
+
+    統合した後のログ。
+    f8bbfe9 (HEAD -> dev-anna) feat: add login feature
+    0ca3b46 (origin/main, origin/HEAD) Initial commit
+
+
 
 # PartC
 
