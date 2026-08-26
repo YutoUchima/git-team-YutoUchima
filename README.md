@@ -94,6 +94,13 @@ enpit
     signup feature
     >>>>>>> dev-you
 
+% cat app.txt
+
+    両方を残して解決した。
+    login feature
+    signup feature
+
+
 % git log --oneline --graph --all
 
     コンフリクトを解消し、コミットした。
@@ -108,5 +115,30 @@ enpit
     * / 4d2700c (dev-ben) feat: add dark theme
     |/  
     * 0ca3b46 (origin/main, origin/HEAD) Initial commit
+
+
+# PartD
+
+## Task6
+
+% git log --oneline -n 2
+
+    experiment ブランチでコミットを2つ作成する。
+    
+    6c26633 (HEAD -> experiment) feat: add broken script
+    cf3ebd0 feat: add helper script
+
+% git log --oneline -n 3
+
+    cherry-pick 後のログ
+    
+    1a2cfb8 (HEAD -> main) feat: add helper script
+    7b4da2c Merge branch 'dev-you' and resolve conflict in app.txt
+    d73c569 Merge branch 'dev-anna'
+
+% ls
+    main に broken.txt がない証拠
+    
+    README.md	app.txt		helper.txt	style.txt
 
 
